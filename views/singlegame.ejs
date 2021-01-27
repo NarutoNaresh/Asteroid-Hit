@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.css"/>
+    <style>
+        :root{
+          --mainColor: #55007c;
+          --subColor: #4c4c4c;
+          --dark:#767c77;
+        }
+            body {
+              font-family: 'Consolas', Courier-new, monospace;
+              font-weight: 400;
+            }
+
+            .plan{
+              color: var(--mainColor) !important;
+            }
+            .bgg{
+              background-color: var(--mainColor) !important;
+              border: 1px solid var(--mainColor) !important;
+              width: 100%;
+              /* position: absolute; */
+
+            }
+            @media only screen and (max-width: 600px) {
+        .bgg {
+            width: 130%;
+            }}
+            .text-muted {
+              color: rgba(255, 255, 255, .7) !important;
+            }
+        .text-muteds {
+        color: rgba(255, 255, 255, 1) !important;
+        }
+            .size{
+              font-size: 24px;
+              font-weight: 800;
+            }
+
+            @media (max-width: 500px) {
+              .foot_box {
+                margin: 30px 10px;
+                padding: 5px;
+              }
+            }
+          </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bgg " style="background-color: #e3f2fd;">
+        <div class="container">
+          <a class="navbar-brand text-muteds size" href="#">Asteroid-Hit Game</a>
+        </div>
+      </nav>
+    <div id="name"></div>
+    <div class="main-div">
+        <canvas id="can-1" width="360" height="450" style="border:3px solid gray;"></canvas>
+        <br>
+        <div class="ctrl-btns">
+        <button class="btn btn-secondary btn-sm"id="ltbtn">Mv-Left</button>
+        <button class="btn btn-primary btn-sm" id="upbtn">Mv- Up</button>
+        <button class="btn btn-secondary btn-sm"id="rtbtn">Mv-Right</button>
+        <br>
+        
+        <button class="btn btn-primary btn-sm"id="dnbtn">Mv-Dwn</button>
+        </div>
+
+    </div>
+    <script src="singleplay.js"></script>
+</body>
+</html>
